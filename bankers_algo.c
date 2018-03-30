@@ -10,6 +10,7 @@ struct process
 	int finish; 
 }p[3];
 int sequence[3];
+//************Safe sequence determining**************
 int safe_check()
 {
 	int finished=0;
@@ -46,6 +47,7 @@ int safe_check()
 	}
 	return 1;
 }
+//***********************Requesting resource******************************
 void resource_allocation(struct process *pr)
 {
 	int i,c=0;
@@ -115,6 +117,7 @@ void resource_allocation(struct process *pr)
 int main()
 {
 	int i,j;
+	//*************************intialisation**********************
 	for(i=0;i<3;i++)
 	{
 		printf("Enter the name of the process- ");
